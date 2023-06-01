@@ -55,7 +55,7 @@ Once you have selected a set of maps or meta-maps, the associated findings, and 
 - You can reorder and polarity-flip the obtained meta-microstate maps using the <img src="Swap.png" alt= “” width="20" height="20"> button or the Reorder Meta-Maps/Meta-Maps menu item. You then need to give the new order of maps for each solution. For polarity reversals, add a minus to the position.
 - You can export the obtained Meta-Maps to be directly used in our EEGLAB microstate toolbox. 
 ### Saving the configuration
-Once you're done, you can save the entire data structure using the File/Save Configuration Menu or the <img src="Save.png" alt= “” width="20" height="20"> button. To load a previously saved data structure, use the File/Load Configuration Menu or the <img src="Load.png" alt= “” width="20" height="20"> button. The resulting files are MATLAB readable, but yet to be documented.
+Once you're done, you can save the entire data structure using the File/Save Configuration Menu or the <img src="Save.png" alt= “” width="20" height="20"> button. To load a previously saved data structure, use the File/Load Configuration Menu or the <img src="Open.jpg" alt= “” width="20" height="20"> button. The resulting files are MATLAB readable, but yet to be documented.
 
 ## Supplementary information
 ### Structure of the electrode coordinate file
