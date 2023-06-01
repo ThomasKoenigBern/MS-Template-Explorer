@@ -61,10 +61,10 @@ Once you're done, you can save the entire data structure using the File/Save Con
 ### Structure of the electrode coordinate file
 (First line gives the number of channels, remaining lines are xyz coordinates and labels)
 
-71
-0.9230 0.0000 -0.3824 Nz
--0.9230 0.0000 -0.3823 Iz
-0.0001 0.7066 0.7066 C3
+71  
+0.9230 0.0000 -0.3824 Nz  
+-0.9230 0.0000 -0.3823 Iz   
+0.0001 0.7066 0.7066 C3   
 ....
 
 ## History
