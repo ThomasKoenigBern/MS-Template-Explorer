@@ -1,1 +1,2 @@
-# MS-Template-Explorer
+# Microstate Template Explorer
+ 
