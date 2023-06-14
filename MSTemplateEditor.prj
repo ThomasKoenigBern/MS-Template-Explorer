@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2499778329" file="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp/MSTemplateEditor.prj" location="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp" name="MSTemplateEditor" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2573951587" file="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp/MSTemplateEditor.prj" location="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp" name="MSTemplateEditor" target="target.mlapps" target-name="Package App">
     <param.appname>MSTemplateEditor</param.appname>
     <param.authnamewatermark>Thomas Koenig</param.authnamewatermark>
     <param.email>thomas.koenig@unibe.ch</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>/private/var/folders/jr/tbmz7_q16_v8z5y2m005475c0000gn/T/tp0834d311_d027_4b68_9b2c_ba0ea21ad0e5.png</param.screenshot>
+    <param.screenshot>/private/var/folders/jr/tbmz7_q16_v8z5y2m005475c0000gn/T/tpd323f1a1_b1f1_46a5_9d9b_517da2da7ff1.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -48,129 +48,6 @@
       <file>${PROJECT_ROOT}/rotate.m</file>
       <file>${PROJECT_ROOT}/splint2.m</file>
       <file>${PROJECT_ROOT}/txt.png</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/display.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/eegobj.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/fieldnames.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/horzcat2.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/isfield.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/isstruct.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/length.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/orderfields.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/rmfield.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/simpletest.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/subsasgn.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@eegobj/subsref.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/binaryopp.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/bsxfun.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/changefile.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/checkcopies_local.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/checkworkspace.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/ctranspose.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/display.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/double.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/end.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/fft.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/isnumeric.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/length.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/mmo.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/ndims.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/permute.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/reshape.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/size.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/subsasgn.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/subsasgn_old.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/subsref.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/sum.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/transpose.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/unitaryopp.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/@mmo/var.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_checkchanlocs.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_checkset.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_eval.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_getdatact.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_getversion.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_hist.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_options.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_optionsbackup.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_retrieve.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeg_store.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/eeglab_options.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/error_bc.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/intersect_bc.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/is_sccn.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/ismatlab.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/ismember_bc.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/plugin_askinstall.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/plugin_getweb.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/plugin_install.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/plugin_urlread.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/plugin_urlreadwrite.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/plugin_urlsize.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/plugin_urlwrite.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/setdiff_bc.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/union_bc.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/unique_bc.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/adminfunc/vararg2str.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/guifunc/errordlg2.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/guifunc/finputcheck.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/guifunc/inputgui.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/guifunc/questdlg2.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/guifunc/supergui.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/guifunc/warndlg2.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_boundarytype.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_decodechan.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_eegrej.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_emptyset.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_findboundaries.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_getica.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_insertbound.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_insertboundold.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_interp.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_isboundary.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_lat2point.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_point2lat.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_uniformepochinfo.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/eeg_urlatency.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/pop_editeventvals.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/pop_importepoch.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/pop_loadset.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/pop_saveset.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/popfunc/pop_select.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/convertlocs.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/eegrej.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/epoch.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/fastif.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/floatwrite.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/gettempfolder.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/icadefs.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/isscript.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/loadtxt.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/lookupchantemplate.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/mattocell.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/parsetxt.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/readeetraklocs.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/readelp.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/readlocs.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/readneurolocs.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/readtxtfile.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/sph2topo.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/strmultiline.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/topo2sph.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/uigetfile2.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/sigprocfunc/uiputfile2.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/studyfunc/std_chaninds.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/functions/studyfunc/std_maketrialinfo.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/Cleanline2.00/external/bcilab_partial/arguments/arg_guipanel.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/Cleanline2.00/external/bcilab_partial/arguments/arg_report.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/Cleanline2.00/external/bcilab_partial/arguments/arg_tovals.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/Cleanline2.00/external/bcilab_partial/helpers/hlp_struct2varargin.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/Cleanline2.00/external/bcilab_partial/helpers/hlp_varargin2struct.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/Cleanline2.00/external/bcilab_partial/keywords/mandatory.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/Cleanline2.00/external/bcilab_partial/keywords/unassigned.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/dipfit/dipfitdefs.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/dipfit/eeglab2fieldtrip.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/dipfit/pop_dipfit_settings.m</file>
-      <file>/Users/thomaskoenig/Library/Application Support/MathWorks/MATLAB Add-Ons/Apps/MSTemplateEditor/eeglab2022.1/plugins/dipfit/traditionaldipfit.m</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
@@ -222,7 +99,7 @@
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>13.3.1</osver>
+      <osver>13.4</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>maci64</arch>

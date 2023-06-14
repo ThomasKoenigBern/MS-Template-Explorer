@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="542486111" file="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp/Microstate template explorer.prj" location="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp" name="Microstate template explorer" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="4038827600" file="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp/Microstate template explorer.prj" location="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp" name="Microstate template explorer" target="target.mlapps" target-name="Package App">
     <param.appname>Microstate template explorer</param.appname>
     <param.authnamewatermark>Thomas Koenig</param.authnamewatermark>
     <param.email>thomas.koenig@unibe.ch</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>/private/var/folders/jr/tbmz7_q16_v8z5y2m005475c0000gn/T/tp842ea147_06bd_4976_b5a4_056c87f24ec4.png</param.screenshot>
+    <param.screenshot>/private/var/folders/jr/tbmz7_q16_v8z5y2m005475c0000gn/T/tpa4e7ad17_e057_44db_bc49_20f7a6a3153b.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -120,7 +120,7 @@
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>13.3.1</osver>
+      <osver>13.4</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>maci64</arch>

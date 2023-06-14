@@ -35,7 +35,7 @@ elseif ~isempty(p.Results.LabelFile)
     [x,y,z] = VAsph2cart(Montage);
     xyz = [x;y;z]';
 else
-    [FileName,PathName,FilterIndex] = uigetfile({"*.xyz","Select XYZ file";"*.txt","Select text file with labels"});
+    [FileName,PathName,FilterIndex] = uigetfile({'*.sxyz';'*.txt'});
 
     switch(FilterIndex)
         case 0
