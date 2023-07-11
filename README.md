@@ -45,7 +45,7 @@ Typically, you will want to go through the following steps. (For the rationales 
 ### Exporation of the Multidimensional Scaling (MDS)
 Once the Similarity Matrix has been computed, you can switch to the MDS tab. Here, you can do the following: 
 - You can identify and select particular maps of particular studies using the tree-control on the left, and you can visually explore the neighborhood of interesting maps using the mouse pointer. Double-clicking on a tree element or clicking on a point in the MDS display will select the associated map. This means that the map is shown on the right side of the display, and eventually associated findings are collected in the Findings Tab. You can select as many maps as you want. 
-- You can use the Findings / Next best guess menu or the <img src="Binoculars.png" alt= “” width="20" height="20"> button to display the next closest match to the first template map that you selected, and obtain its associated findings. This is particularly useful when the first template map you selected is from a new study, and you want to identify the relevant literature based on spatially similar maps (added 30.6.2023).
+- You can use the Findings / Next best guess menu or the <img src="binoculars.png" alt= “” width="20" height="20"> button to display the next closest match to the first template map that you selected, and obtain its associated findings. This is particularly useful when the first template map you selected is from a new study, and you want to identify the relevant literature based on spatially similar maps (added 30.6.2023).
 - You can switch between a 2D and a 3D visualization using the View menu or using the <img src="3D.png" alt= “” width="20" height="20"> button.
 - You can clear all selected maps and findings using the <img src="Broom.png" alt= “” width="20" height="20"> button or using the Findings/Clear menu.
 - If you have computed Meta-Microstate maps (see below), they will also appear in the tree-control. You can show the assigment to these metamaps by selecting the corresponding tree-control element.
@@ -59,9 +59,6 @@ Once you have selected a set of maps or meta-maps, the associated findings, and 
 ### Saving the configuration
 Once you're done, you can save the entire data structure using the File/Save Configuration Menu or the <img src="Save.png" alt= “” width="20" height="20"> button. To load a previously saved data structure, use the File/Load Configuration Menu or the <img src="Open.jpg" alt= “” width="20" height="20"> button. The resulting files are MATLAB readable, but yet to be documented.
 
-## Changelog
-- 30.6.2023. Added the possibility to search for the next best guesses based on spatial similarity.
-
 ## Supplementary information
 ### Structure of the electrode coordinate file
 (First line gives the number of channels, remaining lines are xyz coordinates and labels)
@@ -72,6 +69,7 @@ Once you're done, you can save the entire data structure using the File/Save Con
 0.0001 0.7066 0.7066 C3   
 ....
 
-## History
-1.6.2023: Initial commit
+## History & Changelog
+- 1.6.2023: Initial commit
+- 30.6.2023. Added the possibility to search for the next best guesses based on spatial similarity.
 
