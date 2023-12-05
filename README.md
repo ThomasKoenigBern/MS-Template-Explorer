@@ -2,9 +2,10 @@
 
 ## Installation
 
-1) Download the two files MSTemplateEditor.mlappinstall and MSTemplateExplorer.mlappinstall
-2) In MATLAB, select the APPS tab, hit the Install App button, and select the two downloaded files
-3) The Apps should now be available in the Apps toolbar of MATLAB
+1) Make sure you have installed Matlab 2022b or above.
+2) Download the two files MSTemplateEditor.mlappinstall and MSTemplateExplorer.mlappinstall
+3) In MATLAB, select the APPS tab, hit the Install App button, and select the two downloaded files
+4) The Apps should now be available in the Apps toolbar of MATLAB
   
 ## Using the Microstate Template Editor
 
@@ -12,7 +13,7 @@ The Microstate Template Editor lets you import new sets of microstate template m
 
 ### Loading templates:
 - If you have conducted the microstate analysis using our EEGLAB toolbox (available here: https://github.com/ThomasKoenigBern/microstates), you can directly import your grandmean(s) into the editor by using the <img src="Open.jpg" alt= “” width="20" height="20">
- button. Note that you can only edit the template with a single number of classes. If your data contains more than one set, you will be asked to make choice during the import.
+ button. Note that you can only edit the template with a single number of classes. If your data contains more than one set, you will be asked to make a choice during the import.
 - For data created in CarTool, you should be able to use the <img src="CarTool.png" alt= “” width="20" height="20"> button. Note that you also need the corresponding xyz file.
 - For other data, you can read in the maps as map x electrode text file, and provide a list of electrode labels of the 10-20 system for the elecrode coordinates use the  <img src="txt.png" alt= “” width="20" height="20"> button. 
 - Other import options may be implemented upon reasonable request.
@@ -31,11 +32,11 @@ When editing your templates, you should do all of the following
 Once our done editing, you can save the data using the Save <img src="Save.png" alt= “” width="20" height="20"> and SaveAs <img src="SaveAs.png" alt= “” width="20" height="20"> buttons.
 
 ### Submitting your edited template to the database
-Ideally, you send the resulting data to thomas.koenig(at)unibe.ch who will check it and add it to the database. Note however that, we only accept template sets that have been accepted for publication. Please provide overall grandmean templates unless there is statistically supported evidence for topographic differences between relevant mean template sets.
+Ideally, you send the resulting data to thomas.koenig(at)unibe.ch who will check it and add it to the database. Note, however, that we only accept template sets that have been accepted for publication. Please provide overall grandmean templates unless there is statistically supported evidence for topographic differences between relevant mean template sets.
 
-## Using the Microstate Template Editor
-The Microstate Template Editor only works with template data that has been processed using the Microstate Template Editor. A database of published templates is available for download from the GitHub repository.
-Typically, you will want to go through the following steps. (For the rationales of these steps, see the upcoming paper in the special issue of Brain Topography on microstates.
+## Using the Microstate Template Explorer
+The Microstate Template Explorer only works with template data that has been processed using the Microstate Template Editor. A database of published templates is available for download from the GitHub repository.
+Typically, you will want to go through the following steps. (For the rationales of these steps, see the the paper in the special issue of Brain Topography on microstates, as also found in this repository.) 
 
 ### Computation and visualization of the Similarity Matrix
 - To compute the similarity matrix, all you need to do is to load all the templates that you want to include using the Template/Load Template Menu or the <img src="Compute.png" alt= “” width="20" height="20"> button.
