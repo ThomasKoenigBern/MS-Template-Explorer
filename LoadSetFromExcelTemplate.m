@@ -8,23 +8,60 @@ function EEG = LoadSetFromExcelTemplate(InFile)
     end
 
     % Read the template maps
-    TemplateMapTable = readtable(InFile,"Sheet","Template Maps");
-    TemplateMaps    = table2array(TemplateMapTable(:,2:end));
-    TemplateNames  = table2cell(TemplateMapTable(:,1));
-    ElectrodeNames = TemplateMapTable.Properties.VariableNames(1,2:end)';
+    
+    TemplateMapTable = readcell(InFile,"Sheet","Template Maps");
+    TemplateMaps    = cell2mat(TemplateMapTable(2:end,2:end));
+    TemplateNames   = TemplateMapTable(2:end,1);
+    ElectrodeNames = TemplateMapTable(1,2:end);
+
+    for i = 1:numel(ElectrodeNames)
+        if isnumeric(ElectrodeNames{i})
+            ElectrodeNames{i} = sprintf('%i',ElectrodeNames{i});
+        end
+    end
 
     % Read the electrode positions
-    ElectrodeTable = readtable(InFile,"Sheet","Electrode Coordinates");
+    opts = spreadsheetImportOptions("NumVariables", 4);
+    opts.VariableTypes = ["string", "double", "double", "double"];
+    opts.VariableNames = ["labels", "X", "Y", "Z"];
+    opts.DataRange = 'A2';
+    ElectrodeTable = readtable(InFile,opts,"Sheet","Electrode Coordinates");
 
     if size(ElectrodeTable,1) ~= numel(ElectrodeNames)
         error('Channel number inconsistent');
     end
 
-    if ~all(cellfun(@strcmp,ElectrodeNames,ElectrodeTable.labels))
+    if ~all(cellfun(@strcmp,ElectrodeNames',ElectrodeTable.labels))
         error('Channel ordering inconsistent');
     end
 
-    EEG      = EmptySet(TemplateMaps,table2array(ElectrodeTable(:,2:4)),ElectrodeNames);
+    Coords.pos = table2array(ElectrodeTable(:,2:4));
+    
+    if any(isnan(Coords.pos(:)))
+        warning('Defaulting channel positions');
+        ChannelPositions = GetChannelPositionsFromLabels(ElectrodeTable.labels);
+        res = VAsph2cartStruct(ChannelPositions);
+        Coords.pos = res.Coords';
+    end
+    
+    Coords.lbl = ElectrodeNames;
+
+    h = SetXYZCoordinates([],[],[],Coords);
+
+    if isempty(h)
+        EEG = [];
+        return;
+    end
+
+    Coords = get(h,'UserData');
+
+    close(h);
+
+    x = Coords.x;
+    y = Coords.y;
+    z = Coords.z;
+
+    EEG      = EmptySet(TemplateMaps,[x y z],ElectrodeNames);
 
     nTemplates = size(TemplateMaps,1);
 
@@ -45,16 +82,20 @@ function EEG = LoadSetFromExcelTemplate(InFile)
     for i = 1:numel(NamesToSearch)
         idx = find(strcmp(FindingsTable.MicrostateClass,NamesToSearch{i}));
         if ~isempty(idx)
-            EEG.msinfo.MSMaps(nTemplates).Findings{i} = table2cell(FindingsTable(idx,2:end));
+            EEG.msinfo.MSMaps(nTemplates).Findings{i} = table2cell(FindingsTable(idx,2:5));
         else
             EEG.msinfo.MSMaps(nTemplates).Findings{i} = [];
         end
     end
     
-    MetaDataTable = readtable(InFile,"Sheet","MetaData");
+    MetaDataTable   = readtable(InFile,"Sheet","MetaData");
+    DomainDataTable = readtable(InFile,"Sheet","Research Domain");
+    Keywords        = readtable(InFile,"Sheet","Keywords");
 
-    CitationFields = {'Authors','Title','Journal','Year','Pages','DOI','EMail','Editor'};
-    MetaDataFields =  {'AlgorithmUsed','DataSelection','SoftwareUsed','ModelSelection','BandPassFilter','EyeState','nSubjects','MeanTime'};
+
+    CitationFields = {'Authors','Title','Journal','Year','Pages','DOI','EMail'};
+    MetaDataFields =  {'AlgorithmUsed','BackFittingDataSelection','SoftwareUsed','ModelSelection','BandPassFilter','EyeState','nSubjects','MeanTime'};
+    DomainFields =  {'Cognition and Emotion','Neurological disorders','Psychiatric disorders','Consciousness and its disorders','Development','Drugs and brain stimulation'};
 
     for i = 1:numel(CitationFields)
         EEG.msinfo.Citation.(CitationFields{i}) = GetValuefromField(MetaDataTable,CitationFields{i});
@@ -64,15 +105,53 @@ function EEG = LoadSetFromExcelTemplate(InFile)
         EEG.msinfo.MetaData.(MetaDataFields{i}) = GetValuefromField(MetaDataTable,MetaDataFields{i});
     end
 
+    for i = 1:numel(DomainFields)
+        FieldName = DomainFields{i};
+        FieldName(isspace(FieldName)) = [];
+        EEG.msinfo.Citation.(FieldName) = GetBooleanfromField(DomainDataTable,DomainFields{i});
+    end
 
+    EEG.msinfo.Citation.FreeKeyWords = '';
+    for i = 1:numel(Keywords)
+        if i == 1
+            EEG.msinfo.Citation.FreeKeyWords = [EEG.msinfo.Citation.FreeKeyWords, Keywords.Keywords{i,1}]; 
+        else
+            EEG.msinfo.Citation.FreeKeyWords = [EEG.msinfo.Citation.FreeKeyWords, ', ' Keywords.Keywords{i,1}];
+        end
+    end
+
+    
+    EEG.msinfo.MetaData.DataSelection = GetValuefromField(MetaDataTable,'ClusterDataSelection');
+    EEG.msinfo.MetaData.nSubjects  = str2double(EEG.msinfo.MetaData.nSubjects);
+    EEG.msinfo.MetaData.MeanTime   = str2double(EEG.msinfo.MetaData.MeanTime);
+    EEG.msinfo.ClustPar.MinClasses = EEG.pnts;
+    EEG.msinfo.ClustPar.MaxClasses = EEG.pnts;
 end
 
-function value = GetValuefromField(Data,FieldName)
-    idx = find(strcmp(Data.Field,FieldName));
+function value = GetBooleanfromField(Data,FieldName)
+    idx = find(strcmpi(Data.Domain,FieldName));
     if isempty(idx)
-        error(['Field ' FieldName ' not found in the table']);
+        value = '';
+    else
+        if strcmpi(Data.Applicable{idx},'Yes')
+            value = true;
+        elseif strcmpi(Data.Applicable{idx},'No')
+            value = false;
+        else    
+            value = nan;
+        end
     end
-    value = Data.Value {idx};
+end
+
+
+
+function value = GetValuefromField(Data,FieldName)
+    idx = find(strcmpi(Data.Field,FieldName));
+    if isempty(idx)
+        value = '';
+    else
+        value = Data.Value {idx};
+    end
 end
     
 

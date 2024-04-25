@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="256270546" file="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp/MSTemplateEditor.prj" location="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp" name="MSTemplateEditor" target="target.mlapps" target-name="Package App">
-    <param.appname>MSTemplateEditor</param.appname>
+  <configuration build-checksum="2843072279" file="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp/MSTemplateExplorer.prj" location="/Users/thomaskoenig/Dropbox (PUK-TRC)/Documents/MATLAB/MSWebApp" name="MSTemplateExplorer" target="target.mlapps" target-name="Package App">
+    <param.appname>MSTemplateExplorer</param.appname>
     <param.authnamewatermark>Thomas Koenig</param.authnamewatermark>
     <param.email>thomas.koenig@unibe.ch</param.email>
     <param.company />
@@ -15,7 +15,7 @@
     <param.products.version />
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
-    <param.guid>f728db88-24e7-4049-a59b-4ddd1d6e094d</param.guid>
+    <param.guid>f9b5da14-c5f7-48ea-8111-722180d606df</param.guid>
     <unset>
       <param.company />
       <param.icon />

@@ -41,8 +41,10 @@ Typically, you will want to go through the following steps. (For the rationales 
 ### Computation and visualization of the Similarity Matrix
 - To compute the similarity matrix, all you need to do is to load all the templates that you want to include using the Template/Load Template Menu or the <img src="Compute.png" alt= “” width="20" height="20"> button.
 - Once the computation is finished, you will see the similarity matrix of all included maps. You can read out the similarities by hovering over the pixels of the matrix, and you can display the pair of maps that is associated with a given voxel by klicking on the voxel. 
-- You can select subset of studies for display using the list-box in the lower right corner.
+- You can select subset of studies for display and futher analysis (see below) using the list-box in the lower right corner and the button below. 
 - You can chanege the color scaling using the <img src="Plus.png" alt= “” width="20" height="20"> and <img src="Minus.png" alt= “” width="20" height="20"> buttons.
+- You can filter the studies depending on the research domain using the <img src="filter.png" alt= “” width="20" height="20"> button, and remove the filter using the <img src="NoFilter.png" alt= “” width="20" height="20"> button.
+
 ### Exporation of the Multidimensional Scaling (MDS)
 Once the Similarity Matrix has been computed, you can switch to the MDS tab. Here, you can do the following: 
 - You can identify and select particular maps of particular studies using the tree-control on the left, and you can visually explore the neighborhood of interesting maps using the mouse pointer. Double-clicking on a tree element or clicking on a point in the MDS display will select the associated map. This means that the map is shown on the right side of the display, and eventually associated findings are collected in the Findings Tab. You can select as many maps as you want. 
@@ -52,7 +54,8 @@ Once the Similarity Matrix has been computed, you can switch to the MDS tab. Her
 - If you have computed Meta-Microstate maps (see below), they will also appear in the tree-control. You can show the assigment to these metamaps by selecting the corresponding tree-control element.
 
 ### Exploration of selected findings
-Once you have selected a set of maps or meta-maps, the associated findings, and the corresponding publications appear in the Findings tab. You have the option to export this data to an Excel spreadsheet from the Findings menu.
+Once you have selected a set of maps or meta-maps, the associated findings, and the corresponding publications appear in the Findings tab. You have the option to export this data to an Excel spreadsheet from the Findings menu, and you can have a look at the details of the study by clicking on the study ID or the title of the study (opens the study in the template editor) or by clicking on the DOI (opens the corresponding paper).
+
 ### Computation of Meta-Microstate Maps
 - The MSTemplateExplorer allows you to compute a k-means clustering across all included template maps using the Meta-Maps/Compute Meta-Maps menu item or using the <img src="Cluster.png" alt= “” width="20" height="20"> button. You will be asked for a file with the electrode positions to be used to compute these metamaps. The format of this file is given below. Once the computation is complete, the maps will be displayed.
 - You can reorder and polarity-flip the obtained meta-microstate maps using the <img src="Swap.png" alt= “” width="20" height="20"> button or the Reorder Meta-Maps/Meta-Maps menu item. You then need to give the new order of maps for each solution. For polarity reversals, add a minus to the position.
@@ -73,4 +76,4 @@ Once you're done, you can save the entire data structure using the File/Save Con
 ## History & Changelog
 - 1.6.2023: Initial commit
 - 30.6.2023. Added the possibility to search for the next best guesses based on spatial similarity.
-
+- 25.4.2024 Possibility to filter the studies and work only on subsets of the entire database.
