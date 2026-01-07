@@ -132,6 +132,11 @@ function HelperData = dspCMap2T(map,ChanPos,varargin)
         y = y ./ r;
         z = z ./ r;
 
+        x = x(:)';
+        y = y(:)';
+        z = z(:)';
+
+
         % Here, we project things on a sphere
         
         Theta = acos(z) / pi * 180;
@@ -165,7 +170,6 @@ function HelperData = dspCMap2T(map,ChanPos,varargin)
         [~,idx] = min(HullOriginalEdgesAngle);
         HullOriginalEdgesAngle(1:(idx-1)) = HullOriginalEdgesAngle(1:(idx-1)) - 2*pi;   % These are all the angles of the electrodes
 
-    
         HullOriginalEdgesAngle = [HullOriginalEdgesAngle HullOriginalEdgesAngle(1) + 2*pi];
         HullOriginalEdgesRadius = [HullOriginalEdgesRadius HullOriginalEdgesRadius(1)];
 
@@ -229,6 +233,7 @@ function HelperData = dspCMap2T(map,ChanPos,varargin)
     if InputParameters.Results.TuningMode
         fprintf(1,'Start Interpolating: %f\n',toc);
     end
+
     UserData.PrivateMapInfo.imap = griddata(UserData.PrivateMapInfo.ElectrodesOnPlaneX,UserData.PrivateMapInfo.ElectrodesOnPlaneY,UserData.PrivateMapInfo.InterpolationMatrix*map,UserData.PrivateMapInfo.XGrid2D,UserData.PrivateMapInfo.YGrid2D,'cubic');
     UserData.PrivateMapInfo.imap(~UserData.PrivateMapInfo.InHull) = nan;
     if ~isempty(UserData.PrivateMapInfo.tMap)
@@ -241,6 +246,9 @@ function HelperData = dspCMap2T(map,ChanPos,varargin)
     end
 
     UserData.PrivateMapInfo.nLevels = ceil(max(abs(UserData.PrivateMapInfo.imap(:))) / InputParameters.Results.Step) +1;
+    if isnan(UserData.PrivateMapInfo.nLevels)
+        UserData.PrivateMapInfo.nLevels = 3;
+    end
     UserData.PrivateMapInfo.Levels = ((-UserData.PrivateMapInfo.nLevels) * InputParameters.Results.Step):InputParameters.Results.Step:((UserData.PrivateMapInfo.nLevels)*InputParameters.Results.Step);
 
     UserData.PrivateMapInfo.ShowTValues = false;
@@ -288,6 +296,11 @@ function Show2DMap(~,~,PlotAxis)
     else
         MapToShow = ud.itmap;
     end
+
+%    if any(isnan(MapToShow))
+%        MapToShow = zeros(size(MapToShow));
+%    end
+
 
     if ud.ContourLines == true
         contourf(PlotAxis,ud.XGrid2D,ud.YGrid2D,MapToShow,ud.Levels,'LineWidth',ud.MapLineWidth);
@@ -461,7 +474,9 @@ function UpdateTheContextMenu(PlotAxis)
 end
 
 function AddContextMenu(obj,cm)
-
+    %obj
+    %class(obj.Parent.Parent.Parent.Parent.Parent)
+    cm.Parent = ancestor(obj,'matlab.ui.Figure','toplevel');
     if isprop(obj,'ContextMenu')
         obj.ContextMenu = cm;
     elseif isprop(obj,'uicontextmenu')

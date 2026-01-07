@@ -77,3 +77,4 @@ Once you're done, you can save the entire data structure using the File/Save Con
 - 01.06.2023: Initial commit.
 - 30.06.2023: Added the possibility to search for the next best guesses based on spatial similarity.
 - 25.04.2024: Possibility to filter the studies and work only on subsets of the entire database.
+- 25.09.2024: Possibility to export a list of all studies included in the analysis (File -> Export Study List)
